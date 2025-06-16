@@ -21,7 +21,7 @@ Follow these steps to get the bot running on your own server.
 
 ### Prerequisites
 
-* [Node.js](https://nodejs.org/en/) (v16.9.0 or higher is recommended)
+* [Node.js](https://nodejs.org/en/) (v22.9.0 or higher is recommended)
 * A Discord Bot Token
 
 ### 1. Clone the Repository
