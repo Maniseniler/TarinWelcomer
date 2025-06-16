@@ -49,7 +49,6 @@ client.on("ready", async (app) => {
     console.log("╚════════════════════════════════════╝");
 
     try {
-        await fetchSlachCommand();
         await reloadFetchingInvite();
         await updateVoiceChannelName();
         await connectToInfoChannel();
@@ -106,23 +105,6 @@ async function reloadFetchingInvite() {
 
 async function connectToInfoChannel() {
     client.guilds.cache.get(serverID).channels.fetch(infoChannel).then((channel) => {joinVoiceChannel({channelId: channel.id,guildId: channel.guild.id,adapterCreator: channel.guild.voiceAdapterCreator})})
-}
-
-async function fetchSlachCommand() {
-    const commands = [];
-    const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
-    for (const file of commandFiles) {
-        const command = require(`./commands/${file}`);
-        commands.push(command.data.toJSON());
-    }
-    const rest = new REST().setToken(clientTOKEN);
-    (async () => {
-        try {
-            console.log('Command Fetching System : Started refreshing application (/) commands.');
-            await rest.put(Routes.applicationGuildCommands(clientID, serverID),{ body: commands },);
-            console.log('Command Fetching System : Successfully reloaded application (/) commands.');
-        } catch (error) {console.error(error);}
-    })();
 }
 
 //-------------------------------------------------------------------------------------------------------------------------------------------|
