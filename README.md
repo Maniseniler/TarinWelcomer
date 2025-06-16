@@ -54,10 +54,27 @@ module.exports = {
 
     // --- Role IDs ---
     memberRole: "DEFAULT_MEMBER_ROLE_ID",
-    customerRole: "CUSTOMER_ROLE_ID_FOR_STATUS", // Optional, used for presence status
 
     // --- Bot Info ---
     name: "TarinWelcomer",
     devs: ["YOUR_DISCORD_USER_ID"],
 };
 ```
+### 4. Add Image Templates
+Place your custom background images in the root directory:
+- `welcome.png` (Template for new members)
+- `left.png` (Template for departing members)
+
+### 5. Set Up the Database
+The bot is configured to work with a database via the `./models/database.js` file. Ensure your database connection and schema are properly set up to handle the functions used in the code (e.g., `saveUser`, `updateInvites`, `updateBackupRoles`).
+
+### 6. Run the Bot
+Start the bot using Node.js.
+```bash
+:loop
+node index.js
+goto loop
+```
+The bot should now be online and fully operational in your server!
+🔧 Customization
+Images: You can change the design and layout of the welcome/leave banners by editing the templates (`welcome.png`, `left.png`) and adjusting the drawing coordinates in the `sendCanvasMessage` function.
