@@ -27,5 +27,5 @@ Follow these steps to get the bot running on your own server.
 ### 1. Clone the Repository
 
 ```bash
-git clone [https://github.com/your-username/TarinWelcomer.git](https://github.com/your-username/TarinWelcomer.git)
+git clone [https://github.com/your-username/TarinWelcomer.git](https://github.com/Maniseniler/TarinWelcomer.git)
 cd TarinWelcomer
