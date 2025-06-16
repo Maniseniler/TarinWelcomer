@@ -2,7 +2,7 @@
 
 TarinWelcomer is a powerful and feature-rich Discord bot built with Node.js and `discord.js` v14. It goes beyond simple text messages by generating custom, high-quality image banners to welcome new members and announce departures. With advanced features like invite tracking and role persistence, it provides a professional and engaging experience for any Discord server.
 
-![Welcome Banner Example](https://github.com/user-attachments/assets/2b314afa-53de-4c83-9e6d-f0a5dec6f9a5)
+![Welcome Banner Example](https://github.com/user-attachments/assets/e4b47c12-df62-4f8b-91ca-7aab3a0a0af4)
 *(Example of a generated welcome banner)*
 
 ## ✨ Key Features
