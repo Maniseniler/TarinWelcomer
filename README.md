@@ -14,7 +14,6 @@ TarinWelcomer is a powerful and feature-rich Discord bot built with Node.js and 
 * 🔗 **Advanced Invite Tracking**: Accurately detects which invite a new member used to join, gives credit to the inviter, and updates their total invite count in the database.
 * 🔄 **Role Persistence**: Remembers a user's roles when they leave the server. If they rejoin, the bot automatically restores their previous roles, saving administrators time.
 * 📊 **Live Server Stats**: Keeps a voice channel updated with the server's current member count, providing an easy-to-see statistic.
-* ⚡ **Modern Slash Command Handler**: Features a robust, file-based handler that automatically registers and loads all slash (`/`) commands from the `/commands` directory.
 * ⚙️ **Highly Configurable**: Easily manage all server-specific IDs, channels, and roles from a central `config.js` file.
 * 💾 **Database Integration**: Utilizes a database to persistently store user information, invite counts, and role backups.
 
