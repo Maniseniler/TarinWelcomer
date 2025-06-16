@@ -227,10 +227,10 @@ client.on('guildMemberAdd', async (member) => {
         if (inviterLog.length > 0) {
             const inviterID = inviterLog[0].Inviter;
             const totalInvites = (await db.getInvites(inviterID))?.Invites || 1;
-            await welcomeCh.send(`**Welcome To __${guild.name}__ <a:Saluting:1382967057863278665>**\n` +`**User : ${member} <a:Heart:1382967231473909832>**\n` +`**Invited By <@${inviterID}> <a:Blush:1382967530628321290> Total Invites \`${totalInvites}\` <a:Partying:1382967710433939518>**`);
+            await welcomeCh.send(`**Welcome To __${guild.name}__ **\n` +`**User : ${member} **\n` +`**Invited By <@${inviterID}>  Total Invites \`${totalInvites}\` **`);
         }
         else{
-            await welcomeCh.send(`**Welcome To __${guild.name}__ <a:Saluting:1382967057863278665>**\n` +`**User : ${member} <a:Heart:1382967231473909832>**`);
+            await welcomeCh.send(`**Welcome To __${guild.name}__ **\n` +`**User : ${member} **`);
         }
         let backupRoles = (await db.getRoles(member.user.id))?.Roles;
         if (backupRoles) {
@@ -273,6 +273,6 @@ client.on('guildMemberRemove', async (member) => {
             }
         }
 
-        await sendCanvasMessage('left', leaveCh, member,`**<a:Thinking:1382967018071916565> | ${member.user.globalName || member.user.username} Left The Server**`);
+        await sendCanvasMessage('left', leaveCh, member,`** ${member.user.globalName || member.user.username} Left The Server**`);
     } catch (err) {console.error(`Error on member leave for ${member.user.tag}:`, err);}
 });
