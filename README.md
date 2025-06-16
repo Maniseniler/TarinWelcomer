@@ -29,3 +29,35 @@ Follow these steps to get the bot running on your own server.
 ```bash
 git clone [https://github.com/your-username/TarinWelcomer.git](https://github.com/Maniseniler/TarinWelcomer.git)
 cd TarinWelcomer
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure the Bot
+Create a `config.js` file in the root directory and populate it with your server's information.
+```js
+// config.js
+module.exports = {
+    // --- Bot Credentials ---
+    clientTOKEN: "YOUR_DISCORD_BOT_TOKEN",
+    clientID: "YOUR_BOTS_CLIENT_ID",
+
+    // --- Server & Channel IDs ---
+    serverID: "YOUR_GUILD_ID",
+    infoChannel: "VOICE_CHANNEL_ID_FOR_MEMBER_COUNT",
+    welcomeChannel: "CHANNEL_ID_FOR_WELCOME_MESSAGES",
+    leftChannel: "CHANNEL_ID_FOR_LEAVE_MESSAGES",
+
+    // --- Role IDs ---
+    memberRole: "DEFAULT_MEMBER_ROLE_ID",
+    customerRole: "CUSTOMER_ROLE_ID_FOR_STATUS", // Optional, used for presence status
+
+    // --- Bot Info ---
+    name: "TarinWelcomer",
+    devs: ["YOUR_DISCORD_USER_ID"],
+};
+```
