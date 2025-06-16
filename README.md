@@ -4,6 +4,7 @@ TarinWelcomer is a powerful and feature-rich Discord bot built with Node.js and 
 
 ![Welcome Banner Example](https://github.com/user-attachments/assets/e4b47c12-df62-4f8b-91ca-7aab3a0a0af4)
 ![Screenshot 2025-06-16 184310](https://github.com/user-attachments/assets/1a6402b3-e6c4-4d89-97a8-10c5d3aa9099)
+![image](https://github.com/user-attachments/assets/0bca509a-ee48-4875-8101-a819ebe6ccec)
 
 *(Example of a generated welcome banner)*
 
